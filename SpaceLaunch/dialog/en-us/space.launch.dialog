@@ -1,0 +1,3 @@
+A {{ rocket }} will be launching {{ time }} from {{ location }}.
+The next space launch will be {{ time }}. A {{ rocket }} will be launching from {{ location }}.
+The {{ rocket }} will launch from {{ location }} {{ time }}.
