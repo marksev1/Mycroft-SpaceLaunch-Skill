@@ -9,6 +9,9 @@ This skill interacts with https://launchlibrary.net/ api to return the latest sp
 * "i want to know more"
 
 ## Credits
+
 msev
+
 JarbasAI
-praxeo
+
+[praxeo](https://github.com/praxeo/mycroft_spaceflightnow_skill)
