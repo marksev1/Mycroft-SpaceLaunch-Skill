@@ -1,0 +1,7 @@
+{
+  "utterance": "When is the next rocket launch",
+  "intent_type": "SpaceLaunchIntent",
+  "intent": {
+    "SpaceLaunchKeyword": "rocket launch"
+  }
+}
