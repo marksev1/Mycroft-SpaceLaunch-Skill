@@ -6,6 +6,7 @@ This skill interacts with https://launchlibrary.net/ api to return the latest sp
 
 ## Examples
 * "next rocket launch"
+* "i want to know more"
 
 ## Credits
 msev

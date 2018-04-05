@@ -18,6 +18,9 @@ class SpaceLaunchSkill(MycroftSkill):
         try:
             r = requests.get("https://launchlibrary.net/1.2/launch/next/1")
             date = str(r.json()['launches'][0]['windowstart'])
+            description = str(r.json()['launches'][0]["missions"][0]
+                                   ["description"])
+            self.set_context("launch_description", description)
             day_len = len(date.split(",")[0].split(" ")[1])
 
             if day_len == 1 and 'ExactLaunchKeyword' in message.data:
@@ -43,6 +46,13 @@ class SpaceLaunchSkill(MycroftSkill):
         except Exception as e:
             self.log.error(e)
             self.speak_dialog("not.found")
+
+    @intent_handler(IntentBuilder("SpaceLaunchIntent")
+                    .require("launch_description")
+                    .require('MoreKeyword'))
+    def handle_space_launch_intent(self, message):
+        description = message.data["launch_description"]
+        self.speak(description)
 
 
 def create_skill():
