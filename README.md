@@ -1,13 +1,17 @@
-# SpaceLaunch skill
+## Space Launch
+rocket launch dates
 
+## Description
 This skill interacts with https://launchlibrary.net/ api to return the latest space launch.
 
-## How to install
+## Examples
+* "next rocket launch"
+* "i want to know more"
 
-Unzip or clone `SpaceLaunch` into `mycroft-core/mycroft/skills` directory.
+## Credits
 
-`pip install arrow` into mycroft's virtual environment.
+msev
 
-Restart mycroft instance and test with the following sentences: "when is the next space launch" or "what is the exact time of the next space launch".
+JarbasAI
 
-Thanks praxeo for inspiration https://github.com/praxeo/mycroft_spaceflightnow_skill, his skill scrapes the webpage, while mine interacts with an api.
+[praxeo](https://github.com/praxeo/mycroft_spaceflightnow_skill)
